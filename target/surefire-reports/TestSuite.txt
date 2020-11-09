@@ -1,4 +1,39 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.829 s - in TestSuite
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 179.074 s <<< FAILURE! - in TestSuite
+LoginDBParameters(TestCases.HomePage)  Time elapsed: 2.796 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span>...</span> is not clickable at point (1334, 15). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VENKATESH', ip: '192.168.0.118', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VENKAT~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 04ac1f0743c75d51cba4d09acc98ea3c
+	at TestCases.HomePage.LoginDBParameters(HomePage.java:61)
+
+autoIT(TestCases.homePageNavigation)  Time elapsed: 15.726 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Congratulations')]"}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VENKATESH', ip: '192.168.0.118', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VENKAT~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18375}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f2e057dc08e3380051a88745c2d82795
+*** Element info: {Using=xpath, value=//p[contains(text(),'Congratulations')]}
+	at TestCases.homePageNavigation.autoIT(homePageNavigation.java:54)
+
+loginPagee(TestCases.loginPage)  Time elapsed: 35.146 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span>...</span> is not clickable at point (1334, 15). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VENKATESH', ip: '192.168.0.118', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VENKAT~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d09a70246596f4b6454a1ecb2c1adfb3
+	at TestCases.loginPage.loginPagee(loginPage.java:41)
+

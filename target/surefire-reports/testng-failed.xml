@@ -8,11 +8,33 @@
     <classes>
       <class name="TestCases.HomePage">
         <methods>
+          <include name="LoginDBParameters"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="homePagee"/>
         </methods>
       </class> <!-- TestCases.HomePage -->
     </classes>
   </test> <!-- HomePage(failed) -->
+  <test thread-count="5" verbose="0" name="homePageNavigation(failed)">
+    <classes>
+      <class name="TestCases.homePageNavigation">
+        <methods>
+          <include name="autoIT"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.homePageNavigation -->
+    </classes>
+  </test> <!-- homePageNavigation(failed) -->
+  <test thread-count="5" verbose="0" name="loginPage(failed)">
+    <classes>
+      <class name="TestCases.loginPage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginPagee" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestCases.loginPage -->
+    </classes>
+  </test> <!-- loginPage(failed) -->
 </suite> <!-- Failed suite [Suite] -->

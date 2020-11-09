@@ -14,8 +14,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-
-
+import PageObjectRepo.autoITPage;
 import PageObjectRepo.homePageObj;
 import PageObjectRepo.loginPageObj;
 import resources.base;
@@ -36,13 +35,25 @@ public class homePageNavigation extends base {
 	@Test
 	public void navigation()
 	{
+		driver.get(prop.getProperty("url"));
 		homePageObj hp = new homePageObj(driver);
 		hp.getLink.click();
 		Assert.assertTrue(hp.getLink.isDisplayed());
 		log.info("link is displayed");
-		System.out.println("Check GitHub");
-		System.out.println("Check GitHub");
 				
+	}
+	
+	@Test
+	public void autoIT() throws InterruptedException
+	{
+		autoITPage aIT = new autoITPage(driver);
+		driver.get("http://admin:admin@the-internet.herokuapp.com/");
+		driver.get(prop.getProperty("urlAutoIT"));
+		log.info("the-internet.herokuapp.com logged in Successfully");
+		aIT.authBrowser.click();
+		System.out.println(aIT.authText.getText());
+		Assert.assertEquals(aIT.authText.getText(), "Congratulations! You must have the proper credentials.");
+		log.info("enter windows autho correctly");
 	}
 	
 	
