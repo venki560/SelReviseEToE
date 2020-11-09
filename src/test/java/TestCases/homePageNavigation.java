@@ -40,6 +40,7 @@ public class homePageNavigation extends base {
 		hp.getLink.click();
 		Assert.assertTrue(hp.getLink.isDisplayed());
 		log.info("link is displayed");
+		System.out.println("Check GitHub");
 				
 	}
 	
