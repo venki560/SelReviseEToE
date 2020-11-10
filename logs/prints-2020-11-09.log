@@ -1,7 +1,0 @@
-15:43:57.500 [main] INFO  TestCases.loginPage - webPage launched successfully
-15:43:58.725 [main] INFO  TestCases.loginPage - sign button is displayed
-15:44:02.445 [main] INFO  TestCases.loginPage - webPage launched successfully
-15:44:02.494 [main] INFO  TestCases.loginPage - sign button is displayed
-15:44:21.756 [main] INFO  TestCases.loginPage - sign button is working properly
-15:44:21.883 [main] INFO  TestCases.loginPage - username is entered successfully
-15:44:21.998 [main] INFO  TestCases.loginPage - password is entered successfully

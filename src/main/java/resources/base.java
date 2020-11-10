@@ -3,6 +3,7 @@ package resources;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -20,11 +21,15 @@ public class base {
 	
 	public WebDriver driver;
 	public Properties prop;
+	public String download;
 	public WebDriver initialize() throws IOException
 	{
 	
+		download = System.getProperty("user.dir");
+		HashMap<String,Object> perfsOpt = new HashMap<String, Object>();
+		perfsOpt.put("profile.default_content_settings.popups", 0);
+		perfsOpt.put("download.default_directory", download);
 		prop = new Properties();
-		
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
 		prop.load(fis);
 	//	String browserName=prop.getProperty("Browser");
@@ -33,6 +38,7 @@ public class base {
 		{
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\chromedriver86.exe");	
 		ChromeOptions option= new ChromeOptions();
+		option.setExperimentalOption("prefs", perfsOpt);
 		if(browserName.contains("headless"))
 		{
 		option.addArguments("headless");
@@ -49,7 +55,7 @@ public class base {
 			
 		}
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	
 		return driver;
 	}

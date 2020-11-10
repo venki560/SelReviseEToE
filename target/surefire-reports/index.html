@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,31 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.HomePage" hash-for-method="LoginDBParameters">LoginDBParameters</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.homePageNavigation" hash-for-method="autoIT">autoIT</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.loginPage" hash-for-method="loginPagee(adminOne, passwordOne)">loginPagee(adminOne, passwordOne)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,7 +104,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.HomePage" hash-for-method="LoginDBParameters">LoginDBParameters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.homePageNavigation" hash-for-method="autoIT">autoIT</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.cloudPlatform" hash-for-method="cloudChromeWindowPlatform">cloudChromeWindowPlatform</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.HomePage" hash-for-method="homePagee">homePagee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.loginPage" hash-for-method="loginPagee(adminOne, passwordOne)">loginPagee(adminOne, passwordOne)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -139,6 +135,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.homePageNavigation" hash-for-method="navigation">navigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.autoITUploadDownload" hash-for-method="uploadDownloadAutoIt">uploadDownloadAutoIt</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -153,9 +154,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">TestCases.homePageNavigation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -164,115 +165,8 @@
                   <a name="autoIT">
                   </a> <!-- autoIT -->
                   <span class="method-name">autoIT</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&apos;Congratulations&apos;)]&quot;}
-  (Session info: chrome=86.0.4240.183)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;VENKATESH&apos;, ip: &apos;192.168.0.118&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VENKAT~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18375}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f2e057dc08e3380051a88745c2d82795
-*** Element info: {Using=xpath, value=//p[contains(text(),&apos;Congratulations&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy26.getText(Unknown Source)
-	at TestCases.homePageNavigation.autoIT(homePageNavigation.java:54)
-	at java.util.ArrayList.forEach(ArrayList.java:1255)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestCases.HomePage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginDBParameters">
-                  </a> <!-- LoginDBParameters -->
-                  <span class="method-name">LoginDBParameters</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (1334, 15). Other element would receive the click: &lt;div class=&quot;listbuilder-popup-content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=86.0.4240.183)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;VENKATESH&apos;, ip: &apos;192.168.0.118&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VENKAT~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 04ac1f0743c75d51cba4d09acc98ea3c
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy26.click(Unknown Source)
-	at TestCases.HomePage.LoginDBParameters(HomePage.java:61)
-	at java.util.ArrayList.forEach(ArrayList.java:1255)
-... Removed 39 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestCases.loginPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginPagee(adminOne, passwordOne)">
-                  </a> <!-- loginPagee(adminOne, passwordOne) -->
-                  <span class="method-name">loginPagee</span>
-                  <span class="parameters">(adminOne, passwordOne)</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (1334, 15). Other element would receive the click: &lt;div class=&quot;listbuilder-popup-content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=86.0.4240.183)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;VENKATESH&apos;, ip: &apos;192.168.0.118&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VENKAT~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d09a70246596f4b6454a1ecb2c1adfb3
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy26.click(Unknown Source)
-	at TestCases.loginPage.loginPagee(loginPage.java:41)
-	at java.util.ArrayList.forEach(ArrayList.java:1255)
-... Removed 39 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.homePageNavigation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="navigation">
@@ -290,9 +184,31 @@ Session ID: d09a70246596f4b6454a1ecb2c1adfb3
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="LoginDBParameters">
+                  </a> <!-- LoginDBParameters -->
+                  <span class="method-name">LoginDBParameters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="homePagee">
                   </a> <!-- homePagee -->
                   <span class="method-name">homePagee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.autoITUploadDownload</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadDownloadAutoIt">
+                  </a> <!-- uploadDownloadAutoIt -->
+                  <span class="method-name">uploadDownloadAutoIt</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -305,10 +221,33 @@ Session ID: d09a70246596f4b6454a1ecb2c1adfb3
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="loginPagee(adminOne, passwordOne)">
+                  </a> <!-- loginPagee(adminOne, passwordOne) -->
+                  <span class="method-name">loginPagee</span>
+                  <span class="parameters">(adminOne, passwordOne)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="loginPagee(adminTwo, passwordTwo)">
                   </a> <!-- loginPagee(adminTwo, passwordTwo) -->
                   <span class="method-name">loginPagee</span>
                   <span class="parameters">(adminTwo, passwordTwo)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.cloudPlatform</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cloudChromeWindowPlatform">
+                  </a> <!-- cloudChromeWindowPlatform -->
+                  <span class="method-name">cloudChromeWindowPlatform</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -341,6 +280,16 @@ Session ID: d09a70246596f4b6454a1ecb2c1adfb3
       &lt;class name=&quot;TestCases.loginPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- loginPage --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;uploadDownload&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.autoITUploadDownload&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- uploadDownload --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;cloudPlatform&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.cloudPlatform&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- cloudPlatform --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -359,6 +308,12 @@ Session ID: d09a70246596f4b6454a1ecb2c1adfb3
               </li>
               <li>
                 <span class="test-name">loginPage (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">uploadDownload (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">cloudPlatform (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -384,36 +339,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginPagee')
-data.setCell(0, 2, 'TestCases.loginPage')
-data.setCell(0, 3, 35144);
+data.setCell(0, 1, 'uploadDownloadAutoIt')
+data.setCell(0, 2, 'TestCases.autoITUploadDownload')
+data.setCell(0, 3, 38842);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'navigation')
 data.setCell(1, 2, 'TestCases.homePageNavigation')
-data.setCell(1, 3, 24219);
+data.setCell(1, 3, 30061);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginPagee')
 data.setCell(2, 2, 'TestCases.loginPage')
-data.setCell(2, 3, 22184);
+data.setCell(2, 3, 23023);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'autoIT')
-data.setCell(3, 2, 'TestCases.homePageNavigation')
-data.setCell(3, 3, 15721);
+data.setCell(3, 1, 'loginPagee')
+data.setCell(3, 2, 'TestCases.loginPage')
+data.setCell(3, 3, 22848);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'LoginDBParameters')
-data.setCell(4, 2, 'TestCases.HomePage')
-data.setCell(4, 3, 2784);
+data.setCell(4, 1, 'autoIT')
+data.setCell(4, 2, 'TestCases.homePageNavigation')
+data.setCell(4, 3, 20132);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'homePagee')
 data.setCell(5, 2, 'TestCases.HomePage')
-data.setCell(5, 3, 1501);
+data.setCell(5, 3, 13268);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'LoginDBParameters')
+data.setCell(6, 2, 'TestCases.HomePage')
+data.setCell(6, 3, 12860);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'cloudChromeWindowPlatform')
+data.setCell(7, 2, 'TestCases.cloudPlatform')
+data.setCell(7, 3, 9950);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -445,61 +408,77 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">LoginDBParameters</span>
-                <span class="method-start">36901 ms</span>
+                <span class="method-start">22181 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">homePagee</span>
-                <span class="method-start">40317 ms</span>
+                <span class="method-start">35118 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">41821 ms</span>
+                <span class="method-start">48397 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.homePageNavigation</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">42533 ms</span>
+                <span class="method-start">59755 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">autoIT</span>
-                <span class="method-start">76738 ms</span>
+                <span class="method-start">77733 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">navigation</span>
-                <span class="method-start">92771 ms</span>
+                <span class="method-start">97867 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">116990 ms</span>
+                <span class="method-start">127930 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.loginPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">117110 ms</span>
+                <span class="method-start">128985 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginPagee(adminOne, passwordOne)</span>
-                <span class="method-start">119375 ms</span>
+                <span class="method-start">133177 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginPagee(adminTwo, passwordTwo)</span>
-                <span class="method-start">155060 ms</span>
+                <span class="method-start">156029 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">177245 ms</span>
+                <span class="method-start">179056 ms</span>
               </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.autoITUploadDownload</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">183659 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">uploadDownloadAutoIt</span>
+                <span class="method-start">192827 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">231672 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.cloudPlatform</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">cloudChromeWindowPlatform</span>
+                <span class="method-start">236345 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

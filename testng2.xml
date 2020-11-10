@@ -5,8 +5,7 @@
 <listener class-name="TestCases.listener"/>
 </listeners>
   
-   
-  <test name="HomePage">
+    <test name="HomePage">
     <classes>
       <class name="TestCases.HomePage"/>
     </classes>
@@ -26,11 +25,5 @@
       <class name="TestCases.autoITUploadDownload"/>
     </classes>
   </test>
-  <test name="cloudPlatform">
-    <classes>
-      <class name="TestCases.cloudPlatform"/>
-    </classes>
-  </test>
- 
       
 </suite> <!-- Suite -->

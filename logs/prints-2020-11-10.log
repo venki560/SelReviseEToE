@@ -1,0 +1,6 @@
+17:12:30.145 [main] INFO  TestCases.loginPage - sign button is displayed
+17:12:35.575 [main] INFO  TestCases.loginPage - sign button is working properly
+17:12:36.275 [main] INFO  TestCases.loginPage - username is entered successfully
+17:12:37.109 [main] INFO  TestCases.loginPage - password is entered successfully
+17:12:37.812 [main] INFO  TestCases.loginPage - login button is working properly
+17:12:52.454 [main] INFO  TestCases.autoITUploadDownload - WordToPdf convert url loaded successfully

@@ -4,37 +4,15 @@
   <listeners>
     <listener class-name="TestCases.listener"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="HomePage(failed)">
+  <test thread-count="5" verbose="0" name="uploadDownload(failed)">
     <classes>
-      <class name="TestCases.HomePage">
+      <class name="TestCases.autoITUploadDownload">
         <methods>
-          <include name="LoginDBParameters"/>
+          <include name="uploadDownloadAutoIt"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- TestCases.HomePage -->
+      </class> <!-- TestCases.autoITUploadDownload -->
     </classes>
-  </test> <!-- HomePage(failed) -->
-  <test thread-count="5" verbose="0" name="homePageNavigation(failed)">
-    <classes>
-      <class name="TestCases.homePageNavigation">
-        <methods>
-          <include name="autoIT"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- TestCases.homePageNavigation -->
-    </classes>
-  </test> <!-- homePageNavigation(failed) -->
-  <test thread-count="5" verbose="0" name="loginPage(failed)">
-    <classes>
-      <class name="TestCases.loginPage">
-        <methods>
-          <include name="tearDown"/>
-          <include name="loginPagee" invocation-numbers="0"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- TestCases.loginPage -->
-    </classes>
-  </test> <!-- loginPage(failed) -->
+  </test> <!-- uploadDownload(failed) -->
 </suite> <!-- Failed suite [Suite] -->

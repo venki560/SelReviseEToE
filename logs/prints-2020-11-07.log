@@ -1,7 +1,0 @@
-19:42:18.079 [main] INFO  TestCases.homePageNavigation - link is displayed
-19:44:38.229 [main] INFO  TestCases.HomePage - url launched in successfully
-19:44:38.649 [main] INFO  TestCases.HomePage - webPage launched successfully
-19:44:40.020 [main] INFO  TestCases.HomePage - sign button is displayed
-19:44:40.742 [main] INFO  TestCases.HomePage - sign button is working properly
-19:44:40.841 [main] INFO  TestCases.HomePage - username is entered successfully
-19:44:40.944 [main] INFO  TestCases.HomePage - password is entered successfully

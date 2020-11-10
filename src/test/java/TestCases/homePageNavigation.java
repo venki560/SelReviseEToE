@@ -47,8 +47,8 @@ public class homePageNavigation extends base {
 	public void autoIT() throws InterruptedException
 	{
 		autoITPage aIT = new autoITPage(driver);
-		driver.get("http://admin:admin@the-internet.herokuapp.com/");
 		driver.get(prop.getProperty("urlAutoIT"));
+		driver.get("https://admin:admin@the-internet.herokuapp.com/");
 		log.info("the-internet.herokuapp.com logged in Successfully");
 		aIT.authBrowser.click();
 		System.out.println(aIT.authText.getText());

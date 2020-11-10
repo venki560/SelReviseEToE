@@ -1,204 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="6" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="177295" started-at="2020-11-09T15:41:25 IST" finished-at="2020-11-09T15:44:22 IST">
+  <suite name="Suite" duration-ms="246338" started-at="2020-11-10T17:09:39 IST" finished-at="2020-11-10T17:13:45 IST">
     <groups>
     </groups>
-    <test name="HomePage" duration-ms="41962" started-at="2020-11-09T15:41:25 IST" finished-at="2020-11-09T15:42:07 IST">
+    <test name="HomePage" duration-ms="56266" started-at="2020-11-10T17:09:39 IST" finished-at="2020-11-10T17:10:35 IST">
       <class name="TestCases.HomePage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.HomePage@7d9d0818]" name="setUp" is-config="true" duration-ms="36874" started-at="2020-11-09T15:41:25 IST" finished-at="2020-11-09T15:42:02 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.HomePage@7d9d0818]" name="setUp" is-config="true" duration-ms="22011" started-at="2020-11-10T17:09:39 IST" finished-at="2020-11-10T17:10:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="LoginDBParameters()[pri:0, instance:TestCases.HomePage@7d9d0818]" name="LoginDBParameters" duration-ms="2784" started-at="2020-11-09T15:42:02 IST" finished-at="2020-11-09T15:42:05 IST">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1334, 15). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
-  (Session info: chrome=86.0.4240.183)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VENKATESH', ip: '192.168.0.118', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VENKAT~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 04ac1f0743c75d51cba4d09acc98ea3c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1334, 15). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
-  (Session info: chrome=86.0.4240.183)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VENKATESH', ip: '192.168.0.118', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VENKAT~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 04ac1f0743c75d51cba4d09acc98ea3c
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy26.click(Unknown Source)
-at TestCases.HomePage.LoginDBParameters(HomePage.java:61)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1255)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method status="PASS" signature="LoginDBParameters()[pri:0, instance:TestCases.HomePage@7d9d0818]" name="LoginDBParameters" duration-ms="12860" started-at="2020-11-10T17:10:01 IST" finished-at="2020-11-10T17:10:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDBParameters -->
-        <test-method status="PASS" signature="homePagee()[pri:0, instance:TestCases.HomePage@7d9d0818]" name="homePagee" duration-ms="1501" started-at="2020-11-09T15:42:05 IST" finished-at="2020-11-09T15:42:07 IST">
+        <test-method status="PASS" signature="homePagee()[pri:0, instance:TestCases.HomePage@7d9d0818]" name="homePagee" duration-ms="13268" started-at="2020-11-10T17:10:14 IST" finished-at="2020-11-10T17:10:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePagee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.HomePage@7d9d0818]" name="tearDown" is-config="true" duration-ms="135" started-at="2020-11-09T15:42:07 IST" finished-at="2020-11-09T15:42:07 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.HomePage@7d9d0818]" name="tearDown" is-config="true" duration-ms="7829" started-at="2020-11-10T17:10:28 IST" finished-at="2020-11-10T17:10:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.HomePage -->
     </test> <!-- HomePage -->
-    <test name="homePageNavigation" duration-ms="74492" started-at="2020-11-09T15:42:07 IST" finished-at="2020-11-09T15:43:22 IST">
+    <test name="homePageNavigation" duration-ms="69043" started-at="2020-11-10T17:10:39 IST" finished-at="2020-11-10T17:11:48 IST">
       <class name="TestCases.homePageNavigation">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.homePageNavigation@433defed]" name="setUp" is-config="true" duration-ms="34202" started-at="2020-11-09T15:42:07 IST" finished-at="2020-11-09T15:42:42 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.homePageNavigation@433defed]" name="setUp" is-config="true" duration-ms="17976" started-at="2020-11-10T17:10:39 IST" finished-at="2020-11-10T17:10:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="autoIT()[pri:0, instance:TestCases.homePageNavigation@433defed]" name="autoIT" duration-ms="15721" started-at="2020-11-09T15:42:42 IST" finished-at="2020-11-09T15:42:57 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Congratulations')]"}
-  (Session info: chrome=86.0.4240.183)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VENKATESH', ip: '192.168.0.118', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VENKAT~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18375}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f2e057dc08e3380051a88745c2d82795
-*** Element info: {Using=xpath, value=//p[contains(text(),'Congratulations')]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Congratulations')]"}
-  (Session info: chrome=86.0.4240.183)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VENKATESH', ip: '192.168.0.118', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VENKAT~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18375}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f2e057dc08e3380051a88745c2d82795
-*** Element info: {Using=xpath, value=//p[contains(text(),'Congratulations')]}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy26.getText(Unknown Source)
-at TestCases.homePageNavigation.autoIT(homePageNavigation.java:54)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1255)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="autoIT()[pri:0, instance:TestCases.homePageNavigation@433defed]" name="autoIT" duration-ms="20132" started-at="2020-11-10T17:10:57 IST" finished-at="2020-11-10T17:11:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autoIT -->
-        <test-method status="PASS" signature="navigation()[pri:0, instance:TestCases.homePageNavigation@433defed]" name="navigation" duration-ms="24219" started-at="2020-11-09T15:42:58 IST" finished-at="2020-11-09T15:43:22 IST">
+        <test-method status="PASS" signature="navigation()[pri:0, instance:TestCases.homePageNavigation@433defed]" name="navigation" duration-ms="30061" started-at="2020-11-10T17:11:17 IST" finished-at="2020-11-10T17:11:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.homePageNavigation@433defed]" name="tearDown" is-config="true" duration-ms="35" started-at="2020-11-09T15:43:22 IST" finished-at="2020-11-09T15:43:22 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.homePageNavigation@433defed]" name="tearDown" is-config="true" duration-ms="867" started-at="2020-11-10T17:11:47 IST" finished-at="2020-11-10T17:11:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.homePageNavigation -->
     </test> <!-- homePageNavigation -->
-    <test name="loginPage" duration-ms="60179" started-at="2020-11-09T15:43:22 IST" finished-at="2020-11-09T15:44:22 IST">
+    <test name="loginPage" duration-ms="54512" started-at="2020-11-10T17:11:48 IST" finished-at="2020-11-10T17:12:43 IST">
       <class name="TestCases.loginPage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.loginPage@312aa7c]" name="setUp" is-config="true" duration-ms="2257" started-at="2020-11-09T15:43:22 IST" finished-at="2020-11-09T15:43:24 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.loginPage@312aa7c]" name="setUp" is-config="true" duration-ms="4176" started-at="2020-11-10T17:11:48 IST" finished-at="2020-11-10T17:11:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginPagee(java.lang.String, java.lang.String)[pri:0, instance:TestCases.loginPage@312aa7c]" name="loginPagee" duration-ms="35144" started-at="2020-11-09T15:43:24 IST" data-provider="getData" finished-at="2020-11-09T15:43:59 IST">
+        <test-method status="PASS" signature="loginPagee(java.lang.String, java.lang.String)[pri:0, instance:TestCases.loginPage@312aa7c]" name="loginPagee" duration-ms="22848" started-at="2020-11-10T17:11:52 IST" data-provider="getData" finished-at="2020-11-10T17:12:15 IST">
           <params>
             <param index="0">
               <value>
@@ -211,82 +64,10 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1334, 15). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
-  (Session info: chrome=86.0.4240.183)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VENKATESH', ip: '192.168.0.118', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VENKAT~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d09a70246596f4b6454a1ecb2c1adfb3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1334, 15). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
-  (Session info: chrome=86.0.4240.183)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VENKATESH', ip: '192.168.0.118', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VENKAT~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d09a70246596f4b6454a1ecb2c1adfb3
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy26.click(Unknown Source)
-at TestCases.loginPage.loginPagee(loginPage.java:41)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1255)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPagee -->
-        <test-method status="PASS" signature="loginPagee(java.lang.String, java.lang.String)[pri:0, instance:TestCases.loginPage@312aa7c]" name="loginPagee" duration-ms="22184" started-at="2020-11-09T15:44:00 IST" data-provider="getData" finished-at="2020-11-09T15:44:22 IST">
+        <test-method status="PASS" signature="loginPagee(java.lang.String, java.lang.String)[pri:0, instance:TestCases.loginPage@312aa7c]" name="loginPagee" duration-ms="23023" started-at="2020-11-10T17:12:15 IST" data-provider="getData" finished-at="2020-11-10T17:12:38 IST">
           <params>
             <param index="0">
               <value>
@@ -302,11 +83,35 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPagee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.loginPage@312aa7c]" name="tearDown" is-config="true" duration-ms="44" started-at="2020-11-09T15:44:22 IST" finished-at="2020-11-09T15:44:22 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.loginPage@312aa7c]" name="tearDown" is-config="true" duration-ms="4441" started-at="2020-11-10T17:12:38 IST" finished-at="2020-11-10T17:12:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.loginPage -->
     </test> <!-- loginPage -->
+    <test name="uploadDownload" duration-ms="52334" started-at="2020-11-10T17:12:43 IST" finished-at="2020-11-10T17:13:35 IST">
+      <class name="TestCases.autoITUploadDownload">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.autoITUploadDownload@6c4906d3]" name="setUp" is-config="true" duration-ms="9166" started-at="2020-11-10T17:12:43 IST" finished-at="2020-11-10T17:12:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uploadDownloadAutoIt()[pri:0, instance:TestCases.autoITUploadDownload@6c4906d3]" name="uploadDownloadAutoIt" duration-ms="38842" started-at="2020-11-10T17:12:52 IST" finished-at="2020-11-10T17:13:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadDownloadAutoIt -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.autoITUploadDownload@6c4906d3]" name="tearDown" is-config="true" duration-ms="4319" started-at="2020-11-10T17:13:31 IST" finished-at="2020-11-10T17:13:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.autoITUploadDownload -->
+    </test> <!-- uploadDownload -->
+    <test name="cloudPlatform" duration-ms="9955" started-at="2020-11-10T17:13:35 IST" finished-at="2020-11-10T17:13:45 IST">
+      <class name="TestCases.cloudPlatform">
+        <test-method status="PASS" signature="cloudChromeWindowPlatform()[pri:0, instance:TestCases.cloudPlatform@6f01b95f]" name="cloudChromeWindowPlatform" duration-ms="9950" started-at="2020-11-10T17:13:35 IST" finished-at="2020-11-10T17:13:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloudChromeWindowPlatform -->
+      </class> <!-- TestCases.cloudPlatform -->
+    </test> <!-- cloudPlatform -->
   </suite> <!-- Suite -->
 </testng-results>

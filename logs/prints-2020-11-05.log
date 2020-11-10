@@ -1,7 +1,0 @@
-20:55:12.053 [main] INFO  TestCases.HomePage - url launched in successfully
-20:55:14.938 [main] INFO  TestCases.HomePage - sign button is displayed
-20:55:31.284 [main] INFO  TestCases.homePageNavigation - url launced successfully
-20:55:48.351 [main] INFO  TestCases.homePageNavigation - link is displayed
-21:01:48.149 [TestNG-tests-1] INFO  TestCases.HomePage - url launched in successfully
-21:01:48.272 [TestNG-tests-1] INFO  TestCases.HomePage - sign button is displayed
-21:01:49.796 [TestNG-tests-2] INFO  TestCases.homePageNavigation - url launced successfully
